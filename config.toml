@@ -1,0 +1,6 @@
+theme = "ayu_dark"
+
+[keys.insert]
+
+C-a = "goto_line_start"
+C-e = "goto_line_end"
