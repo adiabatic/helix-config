@@ -1,11 +1,12 @@
 theme = "snazzy"
 
-[editor.soft-wrap]
+[editor]
+line-number = "relative"
 
+[editor.soft-wrap]
 enable = true
 wrap-indicator = ""
 
 [keys.insert]
-
 C-a = "goto_line_start"
 C-e = "goto_line_end"
