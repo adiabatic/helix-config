@@ -1,4 +1,4 @@
-theme = "snazzy"
+theme = "ayu_dark" # ayu dark, light, mirage, or evolve
 
 [editor]
 line-number = "relative"
