@@ -1,4 +1,4 @@
-theme = "ayu_dark" # ayu dark, light, mirage, or evolve
+theme = "monokai_pro_machine"
 
 [editor]
 line-number = "relative"
