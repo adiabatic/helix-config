@@ -7,6 +7,17 @@ line-number = "relative"
 enable = true
 wrap-indicator = ""
 
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+"'" = "'"
+'“' = '”'
+# ’ is usually an apostrophe
+'«' = '»'
+'`' = '`'
+
 [keys.insert]
 C-a = "goto_line_start"
 C-e = "goto_line_end"
