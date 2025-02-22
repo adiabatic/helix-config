@@ -1,4 +1,7 @@
-theme = "monokai_pro_machine"
+# theme = "monokai_pro_machine"
+# theme = "dark_plus"
+# theme = "snazzy"
+theme = "hex_lavender"
 
 [editor]
 line-number = "relative"
