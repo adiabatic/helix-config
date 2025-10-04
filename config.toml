@@ -33,6 +33,8 @@ wrap-indicator = ""
 ### By-word movement
 ###
 
+# Make sure these are kept in sync with their `extend_…` counterparts in [keys.select]
+
 w = "move_prev_sub_word_start"
 e = "move_next_sub_word_end"
 
@@ -110,6 +112,40 @@ C-o = "no_op"
 C-8 = "save_selection"
 C-i = "jump_backward"
 C-k = "jump_forward"
+# ␣j opens the jumplist picker still
+
+[keys.select]
+
+###
+### By-word selection
+###
+
+w = "extend_prev_sub_word_start"
+e = "extend_next_sub_word_end"
+
+W = "extend_prev_sub_word_end"
+E = "extend_next_sub_word_start"
+
+s = "extend_prev_word_start"
+d = "extend_next_word_end"
+
+S = "extend_prev_word_end"
+D = "extend_next_word_start"
+
+x = "extend_prev_long_word_start"
+c = "extend_next_long_word_end"
+
+X = "extend_prev_long_word_end"
+C = "extend_next_long_word_start"
+
+###
+### By-character and -line selection
+###
+
+i = "extend_visual_line_up"
+j = "extend_char_left"
+k = "extend_visual_line_down"
+l = "extend_char_right"
 
 [keys.insert]
 C-a = "goto_line_start"
