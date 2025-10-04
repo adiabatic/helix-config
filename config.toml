@@ -102,7 +102,6 @@ C-d = "page_cursor_down"
 C-x = "page_up"
 C-c = "page_down"
 
-
 ###
 ### Jumplist
 ###
