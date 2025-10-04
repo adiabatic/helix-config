@@ -22,6 +22,73 @@ wrap-indicator = ""
 '«' = '»'
 '`' = '`'
 
+[keys.normal]
+###
+### Emergency function bindings
+###
+
+# (C-1 through C-0 are free)
+
+###
+### By-word movement
+###
+
+w = "move_prev_sub_word_start"
+e = "move_next_sub_word_end"
+
+W = "move_prev_sub_word_end"
+E = "move_next_sub_word_start"
+
+s = "move_prev_word_start"
+d = "move_next_word_end"
+
+S = "move_prev_word_end"
+D = "move_next_word_start"
+
+x = "move_prev_long_word_start"
+c = "move_next_long_word_end"
+
+X = "move_prev_long_word_end"
+C = "move_next_long_word_start"
+
+## Bumped by by-word movement
+##
+
+R = "select_regex" # mnemonic: “regex” (and I never liked `replace_with_yanked` on R anyway; I much preferred vim’s overtype mode)
+C-r = "split_selection"
+
+f = "delete_selection" # mnemonic: “f— it”
+M = "change_selection" # mnemonic: “munge”
+
+b = "extend_line_below"     # mnemonic: “below”
+B = "extend_to_line_bounds" # (select entire line)
+
+C-9 = "copy_selection_on_prev_line"
+C-0 = "copy_selection_on_next_line"
+
+# f/t/F/T are getting totally dropped
+
+F = "no_op"
+
+###
+### Cursor movement
+###
+
+i = "move_visual_line_up"
+j = "move_char_left"
+k = "move_visual_line_down"
+l = "move_char_right"
+
+## Bumped by cursor movement
+##
+
+t = "insert_mode"          # mnemonic: “type”
+T = "insert_at_line_start" # mnemonic: like i/I
+
+h = "no_op"
+H = "no_op"
+I = "no_op"
+
 [keys.insert]
 C-a = "goto_line_start"
 C-e = "goto_line_end"
