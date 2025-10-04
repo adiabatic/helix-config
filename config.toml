@@ -147,6 +147,12 @@ j = "extend_char_left"
 k = "extend_visual_line_down"
 l = "extend_char_right"
 
+[keys.normal.g]
+
+h = "no_op"
+j = "goto_line_start"
+l = "goto_line_end_newline"
+
 [keys.insert]
 C-a = "goto_line_start"
-C-e = "goto_line_end"
+C-e = "goto_line_end_newline"
