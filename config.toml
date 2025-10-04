@@ -89,6 +89,29 @@ h = "no_op"
 H = "no_op"
 I = "no_op"
 
+###
+### Page up/page down
+###
+
+C-w = "page_cursor_half_up"
+C-e = "page_cursor_half_down"
+
+C-s = "page_cursor_up"
+C-d = "page_cursor_down"
+
+C-x = "page_up"
+C-c = "page_down"
+
+
+###
+### Jumplist
+###
+
+C-o = "no_op"
+C-8 = "save_selection"
+C-i = "jump_backward"
+C-k = "jump_forward"
+
 [keys.insert]
 C-a = "goto_line_start"
 C-e = "goto_line_end"
