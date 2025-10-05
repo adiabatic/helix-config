@@ -1,4 +1,4 @@
-# ~/.config/helix/
+# `~/.config/helix/`
 
 I like Helix but I wanted to see if I could make the thing a teeny bit more like [WordStar](https://sfwriter.com/wordstar.htm), particularly when it comes to movement.
 
