@@ -23,6 +23,29 @@ wrap-indicator = ""
 '`' = '`'
 
 [keys.normal]
+
+###
+### Disabled questionable/moved ideas
+###
+
+A-C = "no_op"
+
+# Case twiddling
+# "~" = "no_op"
+# "`" = "no_op"
+"A-`" = "no_op"
+
+# Paging
+C-b = "no_op"
+C-u = "no_op"
+
+# No-yank deleting
+A-d = "no_op"
+A-c = "no_op"
+
+# f/t/F/T are getting totally dropped
+F = "no_op"
+
 ###
 ### Emergency function bindings
 ###
@@ -56,21 +79,20 @@ C = "move_next_long_word_start"
 ## Bumped by by-word movement
 ##
 
-R = "select_regex" # mnemonic: “regex” (and I never liked `replace_with_yanked` on R anyway; I much preferred vim’s overtype mode)
-C-r = "split_selection"
+R = ["kill_to_line_end", "insert_mode"]
+"`" = "select_regex"
+"~" = "split_selection"
 
-f = "delete_selection" # mnemonic: “fling” (or: “f— it”)
-M = "change_selection" # mnemonic: “munge”
+f =   "delete_selection" # mnemonic: “fling” (or: “f— it”)
+A-f = "delete_selection_noyank"
+M =   "change_selection" # mnemonic: “munge”
+A-M = "change_selection_noyank"
 
 b = "extend_line_below"     # mnemonic: “below”
 B = "extend_to_line_bounds" # (select entire line)
 
 C-9 = "copy_selection_on_prev_line"
 C-0 = "copy_selection_on_next_line"
-
-# f/t/F/T are getting totally dropped
-
-F = "no_op"
 
 ###
 ### Cursor movement
@@ -95,14 +117,14 @@ I = "no_op"
 ### Page up/page down
 ###
 
-C-w = "page_cursor_half_up"
-C-e = "page_cursor_half_down"
+C-e = "page_cursor_half_up"
+C-r = "page_cursor_half_down"
 
-C-s = "page_cursor_up"
-C-d = "page_cursor_down"
+C-d = "page_cursor_up"
+C-f = "page_cursor_down"
 
-C-x = "page_up"
-C-c = "page_down"
+C-c = "page_up"
+C-v = "page_down"
 
 ###
 ### Jumplist
@@ -114,7 +136,10 @@ C-i = "jump_backward"
 C-k = "jump_forward"
 # ␣j opens the jumplist picker still
 
-[keys.select]
+[keys.select] # “v” mode
+
+f = "delete_selection"
+M = "change_selection" # mnemonic: “munge”
 
 ###
 ### By-word selection
@@ -147,11 +172,21 @@ j = "extend_char_left"
 k = "extend_visual_line_down"
 l = "extend_char_right"
 
-[keys.normal.g]
+[keys.normal.g] # the `g` picker
 
+k = "no_op"
 h = "no_op"
 j = "goto_line_start"
 l = "goto_line_end_newline"
+z = "goto_file_end"
+
+[keys.select.g] # in “v” mode, the `g` picker
+
+k = "no_op"
+h = "no_op"
+j = "extend_to_line_start"
+l = "extend_to_line_end_newline"
+z = "extend_to_file_end"
 
 [keys.insert]
 C-a = "goto_line_start"
