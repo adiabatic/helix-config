@@ -4,7 +4,6 @@ theme = "snazzy"
 # theme = "hex_lavender"
 
 [editor]
-# line-number = "relative"
 auto-format = false
 
 [editor.soft-wrap]
