@@ -4,7 +4,7 @@ theme = "snazzy"
 # theme = "hex_lavender"
 
 [editor]
-line-number = "relative"
+# line-number = "relative"
 auto-format = false
 
 [editor.soft-wrap]
@@ -23,6 +23,8 @@ wrap-indicator = ""
 '`' = '`'
 
 [keys.normal]
+
+C-s = ":write"
 
 ###
 ### Disabled questionable/moved ideas
