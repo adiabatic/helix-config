@@ -59,7 +59,7 @@ C = "move_next_long_word_start"
 R = "select_regex" # mnemonic: “regex” (and I never liked `replace_with_yanked` on R anyway; I much preferred vim’s overtype mode)
 C-r = "split_selection"
 
-f = "delete_selection" # mnemonic: “f— it”
+f = "delete_selection" # mnemonic: “fling” (or: “f— it”)
 M = "change_selection" # mnemonic: “munge”
 
 b = "extend_line_below"     # mnemonic: “below”
