@@ -5,7 +5,7 @@ I like Helix but I wanted to see if I could make the thing a teeny bit more like
 The main adjustments are:
 
 - ikjl for ↑↓←→ instead of hjkl for ←↓↑→
-- forward/back by words (broadly defined) are we/sd/xc and their uppercase counterparts
+- forward/back by words (broadly defined) are we/sd/xc and their uppercase counterparts (uppercase letters go further)
 - jumping around by fractions of a screenful are done by holding Ctrl and pressing er/df/cv
 
 …and other commands need to be either moved (like d → f) or removed entirely (like ft/FT).
