@@ -12,17 +12,6 @@ auto-format = false
 enable = true
 wrap-indicator = ""
 
-[editor.auto-pairs]
-'(' = ')'
-'{' = '}'
-'[' = ']'
-'"' = '"'
-"'" = "'"
-'“' = '”'
-# ’ is usually an apostrophe
-'«' = '»'
-'`' = '`'
-
 [keys.normal]
 
 C-s = ":write"
