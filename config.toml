@@ -182,6 +182,28 @@ l = "extend_to_line_end"
 ";" = "extend_to_line_end_newline"
 z = "extend_to_file_end"
 
+[keys.normal."C-w"]
+
+h =   "no_op"
+C-h = "no_op"
+H =   "no_op"
+
+i =   "jump_view_up"
+C-i = "jump_view_up"
+I =   "swap_view_up"
+
+j =   "jump_view_left"
+C-j = "jump_view_left"
+J =   "swap_view_left"
+
+k =   "jump_view_down"
+C-k = "jump_view_down"
+K =   "swap_view_down"
+
+l =   "jump_view_right"
+C-l = "jump_view_right"
+L =   "swap_view_right"
+
 [keys.insert]
 C-a = "goto_line_start"
 C-e = "goto_line_end_newline"
