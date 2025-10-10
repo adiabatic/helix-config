@@ -20,6 +20,8 @@ wrap-indicator = ""
 
 C-s = ":write"
 
+R = ["kill_to_line_end", "insert_mode"] # I miss vim’s R
+
 ###
 ### Disabled questionable/moved ideas
 ###
@@ -75,7 +77,6 @@ C = "move_next_long_word_start"
 ## Bumped by by-word movement
 ##
 
-R = ["kill_to_line_end", "insert_mode"]
 "`" = "select_regex"
 "~" = "split_selection"
 
