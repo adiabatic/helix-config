@@ -1,9 +1,13 @@
 # SPDX-License-Identifier: Unlicense
 
+# NB: you can have per-project `.helix/config.toml` files
+# for, say, per-project theme preferences
+# (also `languages.toml`, but that’s less interesting)
+
 # theme = "monokai_pro_machine"
 # theme = "dark_plus"
-theme = "snazzy"
 # theme = "hex_lavender"
+theme = "snazzy"
 
 [editor]
 auto-format = false
