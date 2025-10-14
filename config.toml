@@ -22,6 +22,13 @@ C-s = ":write"
 
 R = ["kill_to_line_end", "insert_mode"] # I miss vim’s R
 
+C-p = [ # mnemonic: “puff”
+  "open_above",
+  "normal_mode",
+  "insert_newline",
+  "insert_mode",
+]
+
 ###
 ### Disabled questionable/moved ideas
 ###
