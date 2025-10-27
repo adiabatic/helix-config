@@ -176,6 +176,10 @@ j = "extend_char_left"
 k = "extend_visual_line_down"
 l = "extend_char_right"
 
+[keys.normal.space]
+A-c = "no_op"
+q = ":pipe quote-educator" # https://github.com/adiabatic/quote-educator
+
 [keys.normal.g] # the `g` picker
 
 k = "no_op"
