@@ -1,4 +1,4 @@
-# The explainer
+# The explainer (very incomplete)
 
 You’ve read the [README][], right? Good.
 
@@ -18,7 +18,7 @@ And:
 - C-p (previous)
 - C-n (next)
 
-I think editing would be more pleasant if keys with similar functions were adjacent to each other.
+I think moving and editing would be more pleasant and easier to learn if keys with similar functions were right next to each other.
 
 ## Questions, answered
 

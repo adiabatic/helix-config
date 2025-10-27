@@ -8,7 +8,7 @@ The main adjustments are:
 - forward/back by words (broadly defined) are we/sd/xc and their uppercase counterparts (uppercase letters go further)
 - jumping around by fractions of a screenful are done by holding Ctrl and pressing er/df/cv
 
-…and other commands need to be either moved (like d → f) or removed entirely (like ft/FT).
+…and other commands need to be either moved (like d → f) or removed entirely (like ft/FT — I never really got the hang of them).
 
 I was pleasantly surprised to discover that rearranging moderate amounts of functionality didn’t turn into an awful weekend-long juggling act.
 
