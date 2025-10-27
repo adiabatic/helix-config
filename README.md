@@ -12,6 +12,8 @@ The main adjustments are:
 
 I was pleasantly surprised to discover that rearranging moderate amounts of functionality didn’t turn into an awful weekend-long juggling act.
 
+You may be interested in [the explainer](EXPLAINER.md).
+
 ## Known bugs and limitations
 
 Not all instances of d-to-delete are replaced with f, and that sort of thing.
