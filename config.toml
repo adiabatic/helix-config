@@ -178,6 +178,11 @@ l = "extend_char_right"
 
 [keys.normal.space]
 A-c = "no_op"
+C-c = "toggle_line_comments"
+
+[keys.normal."+"]
+w = ":toggle whitespace.render all"
+W = ":toggle whitespace.render none"
 q = ":pipe quote-educator" # https://github.com/adiabatic/quote-educator
 
 [keys.normal.g] # the `g` picker
