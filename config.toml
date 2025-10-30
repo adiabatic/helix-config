@@ -181,9 +181,26 @@ A-c = "no_op"
 C-c = "toggle_line_comments"
 
 [keys.normal."+"]
+
+# If pressing Alt in normal mode is too annoying…
+s     = "split_selection_on_newline"
+minus = "merge_selections"
+_     = "merge_consecutive_selections"
+","   = "remove_primary_selection"
+";"   = "flip_selections"       # ???
+x     = "shrink_to_line_bounds" # ???
+
+# Miscellaneous
 w = ":toggle whitespace.render all"
 W = ":toggle whitespace.render none"
+
 q = ":pipe quote-educator" # https://github.com/adiabatic/quote-educator
+
+d = ":insert-output sh -c \"       date '+%%F'           | tr -d '\\n' \""
+D = ":insert-output sh -c \"TZ=UTC date '+%%FT%%TZ'      | tr -d '\\n' \""
+m = ":insert-output sh -c \"       date '+%%B %%-d, %%Y' | tr -d '\\n' \"" # mnemonic: ’murrca
+
+u = ":insert-output sh -c \"uuidgen | tr A-Z a-z         | tr -d '\\n' \""
 
 [keys.normal.g] # the `g` picker
 
