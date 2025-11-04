@@ -95,9 +95,6 @@ A-M = "change_selection_noyank"
 b = "extend_line_below"     # mnemonic: “below”
 B = "extend_to_line_bounds" # (select entire line)
 
-C-9 = "copy_selection_on_prev_line"
-C-0 = "copy_selection_on_next_line"
-
 ###
 ### Cursor movement
 ###
@@ -175,6 +172,15 @@ i = "extend_visual_line_up"
 j = "extend_char_left"
 k = "extend_visual_line_down"
 l = "extend_char_right"
+
+###
+### Something else
+###
+
+# These make sense if you’re using, or familiar with,
+# https://github.com/adiabatic/zweihander/tree/main/keyboards/ergodox_ez/base/keymaps/zweihander_macos
+C-u = "copy_selection_on_prev_line" # VS Code: ⌥⌘↑
+C-o = "copy_selection_on_next_line" # VS Code: ⌥⌘↓
 
 [keys.normal.space]
 A-c = "no_op"
