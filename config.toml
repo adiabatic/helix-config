@@ -185,6 +185,7 @@ C-o = "copy_selection_on_next_line" # VS Code: ⌥⌘↓
 [keys.normal.space]
 A-c = "no_op"
 C-c = "toggle_line_comments"
+C-j = "join_selections"
 
 [keys.normal."+"]
 
