@@ -44,7 +44,7 @@ A-C = "no_op"
 
 # Paging
 C-b = "no_op"
-C-u = "no_op"
+# C-u = "no_op"
 
 # No-yank deleting
 A-d = "no_op"
@@ -133,11 +133,16 @@ C-v = "page_down"
 ### Jumplist
 ###
 
-C-o = "no_op"
+# C-o = "no_op"
 C-8 = "save_selection"
 C-i = "jump_backward"
 C-k = "jump_forward"
 # ␣j opens the jumplist picker still
+
+# These make sense if you’re using, or familiar with,
+# https://github.com/adiabatic/zweihander/tree/main/keyboards/ergodox_ez/base/keymaps/zweihander_macos
+C-u = "copy_selection_on_prev_line" # VS Code: ⌥⌘↑
+C-o = "copy_selection_on_next_line" # VS Code: ⌥⌘↓
 
 [keys.select] # “v” mode
 
@@ -178,11 +183,6 @@ l = "extend_char_right"
 ###
 ### Something else
 ###
-
-# These make sense if you’re using, or familiar with,
-# https://github.com/adiabatic/zweihander/tree/main/keyboards/ergodox_ez/base/keymaps/zweihander_macos
-C-u = "copy_selection_on_prev_line" # VS Code: ⌥⌘↑
-C-o = "copy_selection_on_next_line" # VS Code: ⌥⌘↓
 
 [keys.normal.space]
 A-c = "no_op"
